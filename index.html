@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +16,9 @@
     --warn-bg: #431407;
     --warn-line: #f59e0b;
   }
+
   * { box-sizing: border-box; }
+
   body {
     margin: 0;
     background: var(--bg);
@@ -23,26 +26,94 @@
     font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
     line-height: 1.6;
   }
-  .wrap { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
-  header { text-align: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); margin-bottom: 1.75rem; }
-  header h1 { margin: 0; color: var(--accent); font-size: 1.9rem; letter-spacing: .12em; text-transform: uppercase; }
-  header p { margin: .4rem 0 0; color: var(--muted); font-size: .9rem; }
 
-  .card { background: var(--card); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
-  .card h2 { margin: 0 0 1rem; padding-bottom: .75rem; border-bottom: 1px solid var(--line); color: var(--accent); font-size: 1.25rem; }
-  .card > p { color: var(--muted); font-size: .85rem; margin: 0 0 1rem; }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+  }
 
-  .telemetria { margin-bottom: 1.5rem; text-align: center; min-height: 150px; }
-  .telemetria p { margin: 0; }
-  
-  #monitor { margin-top: 1rem; }
+  header {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 1.75rem;
+  }
 
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+  header h1 {
+    margin: 0;
+    color: var(--accent);
+    font-size: 1.9rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
 
-  ol, ul { margin: 0; padding-left: 1.2rem; font-size: .85rem; }
-  li { margin-bottom: .85rem; }
-  li strong { color: #fff; }
+  header p {
+    margin: .4rem 0 0;
+    color: var(--muted);
+    font-size: .9rem;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,.35);
+  }
+
+  .card h2 {
+    margin: 0 0 1rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--accent);
+    font-size: 1.25rem;
+  }
+
+  .card > p {
+    color: var(--muted);
+    font-size: .85rem;
+    margin: 0 0 1rem;
+  }
+
+  .telemetria {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    min-height: 150px;
+  }
+
+  .telemetria p {
+    margin: 0;
+  }
+
+  #monitor {
+    margin-top: 1rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  ol, ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: .85rem;
+  }
+
+  li {
+    margin-bottom: .85rem;
+  }
+
+  li strong {
+    color: #fff;
+  }
 
   .aviso {
     margin-top: 1.25rem;
@@ -53,9 +124,13 @@
     font-size: .8rem;
     color: #fef3c7;
   }
-  .aviso strong { color: #fff; }
+
+  .aviso strong {
+    color: #fff;
+  }
 </style>
 </head>
+
 <body>
 <div class="wrap">
 
@@ -71,36 +146,117 @@
   </section>
 
   <div class="grid">
+
     <section class="card">
       <h2>Guía de Experiencia y Operación Rápida</h2>
-      <p>Diseñado para una integración natural con tu estilo de manejo. Convierte un simple movimiento del pulgar en señalización luminosa clara en solo 4 pasos:</p>
+
+      <p>
+        Diseñado para una integración natural con tu estilo de manejo.
+        Convierte un simple movimiento del pulgar en señalización luminosa
+        clara en solo 4 pasos:
+      </p>
+
       <ol>
-        <li><strong>Energización Inteligente:</strong> Conecte cualquier Power Bank comercial de 5V al conector reforzado situado en el bolsillo interno protector. El chaleco realizará una autoverificación del sistema dinámico en menos de un segundo.</li>
-        <li><strong>Vinculación Inalámbrica Instantánea:</strong> Desde su dispositivo móvil o pantalla de monitoreo, conéctese a la red Wi-Fi dedicada que emite el núcleo procesador ESP32. Sin configuraciones complejas ni instalaciones pesadas.</li>
-        <li><strong>Control con Joystick:</strong> Para indicar un giro, mueva el joystick hacia el lado deseado y el chaleco proyectará la dirección en su señalización luminosa, sin necesidad de hacer señas manuales.</li>
-        <li><strong>Gestión Eficiente de Energía:</strong> Al finalizar su ruta, simplemente desconecte la batería. El diseño ultraeficiente garantiza máxima autonomía para cubrir trayectos urbanos e interurbanos prolongados.</li>
+        <li>
+          <strong>Energización con baterías recargables:</strong>
+          Instale las baterías 18650 recargables en el compartimento destinado
+          para la alimentación del chaleco, respetando siempre la polaridad
+          indicada. Una vez conectada la fuente de energía, el chaleco realizará
+          una autoverificación del sistema dinámico en menos de un segundo.
+        </li>
+
+        <li>
+          <strong>Vinculación Inalámbrica Instantánea:</strong>
+          Desde su dispositivo móvil o pantalla de monitoreo, conéctese a la
+          red Wi-Fi dedicada que emite el núcleo procesador ESP32. Sin
+          configuraciones complejas ni instalaciones pesadas.
+        </li>
+
+        <li>
+          <strong>Control con Joystick:</strong>
+          Para indicar un giro, mueva el joystick hacia el lado deseado y el
+          chaleco proyectará la dirección en su señalización luminosa, sin
+          necesidad de hacer señas manuales.
+        </li>
+
+        <li>
+          <strong>Gestión Eficiente de Energía:</strong>
+          Al finalizar su ruta, apague el sistema y retire las baterías 18650
+          cuando sea necesario para su recarga o almacenamiento. El diseño
+          eficiente busca proporcionar una autonomía adecuada para cubrir
+          trayectos urbanos e interurbanos.
+        </li>
       </ol>
     </section>
 
     <section class="card">
       <h2>Garantía de Protección y Cuidado del Producto</h2>
-      <p>Tu tranquilidad es nuestra prioridad. Maximiza la durabilidad de tu inversión siguiendo estos estándares recomendados:</p>
+
+      <p>
+        Tu tranquilidad es nuestra prioridad. Maximiza la durabilidad de tu
+        inversión siguiendo estos estándares recomendados:
+      </p>
+
       <ul>
-        <li><strong>Mantenimiento Preventivo:</strong> La capa externa textil es resistente al desgaste. Antes del lavado, extraiga el módulo electrónico modular deslizando las conexiones rápidas.</li>
-        <li><strong>Conducción Aumentada:</strong> Esta prenda actúa como un escudo de visibilidad activa de alta potencia, mejorando la visibilidad del ciclista ante los vehículos a su alrededor durante la noche.</li>
-        <li><strong>Chequeo Previo al Viaje:</strong> Verifique que su fuente de poder cuente con carga suficiente para asegurar una luminiscencia óptima a lo largo de toda su ruta.</li>
+        <li>
+          <strong>Mantenimiento Preventivo:</strong>
+          La capa externa textil es resistente al desgaste. Antes del lavado,
+          extraiga el módulo electrónico y las baterías 18650, desconectando
+          previamente todas las conexiones eléctricas.
+        </li>
+
+        <li>
+          <strong>Cuidado de las baterías:</strong>
+          Utilice únicamente baterías 18650 recargables compatibles con el
+          sistema y un cargador adecuado para este tipo de batería. No utilice
+          baterías dañadas, deformadas o con signos de deterioro.
+        </li>
+
+        <li>
+          <strong>Conducción Aumentada:</strong>
+          Esta prenda actúa como un sistema de visibilidad activa de alta
+          potencia, mejorando la visibilidad del ciclista ante los vehículos
+          a su alrededor durante la noche.
+        </li>
+
+        <li>
+          <strong>Chequeo Previo al Viaje:</strong>
+          Verifique que las baterías 18650 tengan suficiente carga y que estén
+          correctamente instaladas antes de utilizar el chaleco. Compruebe
+          también que los conectores y cables estén correctamente asegurados.
+        </li>
       </ul>
+
       <div class="aviso">
-        <strong>Compromiso de Calidad:</strong> CicloSeguro respalda el funcionamiento de su tecnología original. Evite la alteración de los componentes integrados para preservar la calibración óptima del sistema de señalización.
+        <strong>Seguridad de las baterías:</strong>
+        Las baterías 18650 deben manipularse y cargarse siguiendo las
+        especificaciones del fabricante. Evite cortocircuitos, golpes,
+        temperaturas extremas y contacto entre los terminales. No utilice
+        baterías dañadas o de procedencia desconocida.
+      </div>
+
+      <div class="aviso">
+        <strong>Compromiso de Calidad:</strong>
+        CicloSeguro respalda el funcionamiento de su tecnología original.
+        Evite la alteración de los componentes integrados para preservar la
+        calibración óptima del sistema de señalización.
       </div>
     </section>
+
   </div>
 
   <section class="card" style="margin-top:1.5rem">
     <h2>Sobre el proyecto</h2>
-    <p style="margin:0">Proyecto personal de portafolio, diseñado y construido de principio a fin por Victor: diseño y fabricación de la PCB, electrónica, firmware en ESP32 y ensamblaje del chaleco.</p>
+
+    <p style="margin:0">
+      Proyecto personal de portafolio, diseñado y construido de principio a
+      fin por Victor: diseño y fabricación de la PCB, electrónica, sistema de
+      alimentación mediante baterías 18650 recargables, firmware en ESP32 y
+      ensamblaje del chaleco.
+    </p>
   </section>
 
 </div>
 </body>
 </html>
+```
